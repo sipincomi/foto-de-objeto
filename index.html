@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reconocer objetos</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+<script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Reconociendo objetos con Inteligencia Artificial</h1>
+    <div>
+        <p>Esta red neuronal artificial puede reconocer:</p>
+        <hr>
+        Botella
+        <hr>
+        Teclado
+        <hr>
+        Lentes
+        <hr>
+        Borreguito
+        <hr>
+        Peluche
+        <hr>
+        Telefono
+        <hr>
+        Tablet
+        <hr>
+    </div>
+    <div>
+        <p>Vista de la cámara:</p>
+        <div id="camara"></div>
+        <button class="btn btn-info" onclick="tomarFoto()">Tomar foto</button>
+        <br>
+        <div id="captura"></div>
+        <button class="btn btn-success" onclick="reconocer()">Reconocer objeto</button>
+        <h3 id="objeto">objeto</h3>
+        <h3 id="porcentaje">%</h3>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

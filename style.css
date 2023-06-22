@@ -1,0 +1,10 @@
+body{
+    background: url(https://www.anmosugoi.com/wp-content/uploads/2022/05/SPY-x-FAMILY-Anya-Forger.jpg);
+    text-align: center;
+}
+#camara{
+    width: 350px;
+    height: 300px;
+    border: black 2px dashed;
+    margin: 0 auto;
+}
